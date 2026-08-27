@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Design of a Biomimetic Joint-Covering Skin with Tissue-Like Structure to Enhance Proprioception in a Musculoskeletal Humanoid</title>
+    <meta
+      name="description"
+      content="A tissue-structured biomimetic joint-covering skin that combines skin- and muscle-derived sensing to enhance proprioception in the musculoskeletal humanoid Musashi-W."
+    >
+    <link rel="canonical" href="https://poyotamu000.github.io/tissue-structured-biomimetic-joint-covering-skin-musashiw/">
+
+    <meta property="og:url" content="https://poyotamu000.github.io/tissue-structured-biomimetic-joint-covering-skin-musashiw/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Biomimetic Joint-Covering Skin">
+    <meta property="og:title" content="Design of a Biomimetic Joint-Covering Skin with Tissue-Like Structure to Enhance Proprioception in a Musculoskeletal Humanoid">
+    <meta
+      property="og:description"
+      content="Tissue-level biomimetic skin extends proprioception in Musashi-W through embedded pressure- and stretch-sensitive elements."
+    >
+    <meta
+      property="og:image"
+      content="https://poyotamu000.github.io/tissue-structured-biomimetic-joint-covering-skin-musashiw/assets/img/external-disturbance.jpg"
+    >
+    <meta property="og:image:width" content="1684">
+    <meta property="og:image:height" content="768">
+    <meta property="og:image:alt" content="Musashi-W wearing the joint-covering skin during an external disturbance experiment">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Biomimetic Joint-Covering Skin for Musculoskeletal Humanoids">
+    <meta
+      name="twitter:description"
+      content="A tissue-structured biomimetic skin for proprioception in the musculoskeletal humanoid Musashi-W."
+    >
+    <meta
+      name="twitter:image"
+      content="https://poyotamu000.github.io/tissue-structured-biomimetic-joint-covering-skin-musashiw/assets/img/external-disturbance.jpg"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+    >
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+
+  <body>
+    <main class="container-fluid">
+      <div class="row">
+        <div class="page-column col-12 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+          <header class="hero text-center">
+            <p class="eyebrow">TISSUE-LEVEL BIOMIMETIC SENSING</p>
+            <h1>Design of a Biomimetic Joint-Covering Skin</h1>
+            <h2>with Tissue-Like Structure to Enhance Proprioception<br class="d-none d-md-inline"> in a Musculoskeletal Humanoid</h2>
+
+            <p class="conference">2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2026)</p>
+
+            <ul class="list-inline author-list" aria-label="Authors">
+              <li class="list-inline-item author-item"><span class="author-pill">Akihiro Miki</span></li>
+              <li class="list-inline-item author-item"><span class="author-pill">Shun Hasegawa</span></li>
+              <li class="list-inline-item author-item"><span class="author-pill">Yoshimoto Ribayashi</span></li>
+              <li class="list-inline-item author-item"><span class="author-pill">Kento Kawaharazuka</span></li>
+              <li class="list-inline-item author-item"><span class="author-pill">Kei Okada</span></li>
+            </ul>
+            <p class="affiliation">The University of Tokyo</p>
+
+            <ul class="list-inline resource-list" aria-label="Paper resources">
+              <li class="list-inline-item">
+                <a href="assets/paper.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-dark rounded-button">
+                  <i class="bi-file-pdf button-icon" aria-hidden="true"></i> Paper PDF
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#video" class="btn btn-dark rounded-button">
+                  <i class="bi-play-circle button-icon" aria-hidden="true"></i> Video
+                </a>
+              </li>
+            </ul>
+          </header>
+
+          <figure class="hero-figure">
+            <img
+              src="assets/img/data-collection.jpg"
+              class="img-fluid"
+              width="1878"
+              height="717"
+              alt="Four postures of Musashi-W during sensorimotor data collection with the joint-covering skin"
+              fetchpriority="high"
+            >
+          </figure>
+
+          <section class="key-results" aria-labelledby="highlights-heading">
+            <h3 id="highlights-heading" class="sr-only">Research highlights</h3>
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="result-card">
+                  <p class="result-value">3 layers</p>
+                  <p class="result-label">Epidermis, dermis, and subcutaneous tissue</p>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="result-card">
+                  <p class="result-value">44 sensors</p>
+                  <p class="result-label">32 Merkel-like and 12 Ruffini-like elements</p>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="result-card">
+                  <p class="result-value">1.62° RMSE</p>
+                  <p class="result-label">Best muscle-and-skin fusion result</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="content-column">
+            <hr>
+            <section aria-labelledby="abstract-heading">
+              <h3 id="abstract-heading">Abstract</h3>
+              <p>
+                Proprioception in musculoskeletal humanoids is typically estimated primarily from muscle sensing, while the role of cutaneous deformation around joints remains insufficiently explored. In biological systems, mechanoreceptors distributed within soft tissue complement muscle feedback and support reliable joint state estimation. This study presents the design of a biomimetic joint-covering skin with a tissue-like layered structure that integrates pressure- and stretch-sensitive elements within the joint-covering tissue.
+              </p>
+              <p>
+                The proposed skin is implemented on the musculoskeletal humanoid Musashi-W, and its independent proprioceptive capability as well as its integration with muscle sensing are evaluated. The skin alone estimates joint angles with an average error of approximately three degrees, while appropriate integration with muscle sensing further improves accuracy. The results also suggest that the joint-covering structure can help protect muscles from direct mechanical disturbances and provide complementary cues for interpreting external contact.
+              </p>
+            </section>
+
+            <hr>
+            <section aria-labelledby="motivation-heading">
+              <h3 id="motivation-heading">Motivation</h3>
+              <p>
+                Musculoskeletal humanoids are driven by tendons and compliant structures, so their joint angles are not always directly measurable. Existing approaches mainly estimate body state from muscle length and tension. Biological proprioception, however, also draws on mechanoreceptors distributed through the skin and soft tissue around joints. This work asks whether a robot can similarly use deformation of a joint-covering skin as an additional source of body-state information.
+              </p>
+            </section>
+
+            <hr>
+            <section aria-labelledby="design-heading">
+              <h3 id="design-heading">Tissue-Structured Biomimetic Skin</h3>
+              <p>
+                The skin reproduces the relative organization of three biological layers: a thin, comparatively stiff epidermis; a compliant dermis; and a softer subcutaneous layer. Strain gauges placed near the epidermis–dermis boundary act as Merkel-cell-like pressure-sensitive elements. Conductive chainmail structures embedded deeper in the subcutaneous layer act as Ruffini-ending-like stretch-sensitive elements.
+              </p>
+
+              <figure class="figure-narrow">
+                <img
+                  src="assets/img/study-overview.jpg"
+                  class="img-fluid"
+                  width="1113"
+                  height="2173"
+                  loading="lazy"
+                  alt="Overview of the three-layer biomimetic skin and its implementation on Musashi-W"
+                >
+                <figcaption>
+                  From biological skin organization to a tissue-structured skin that covers the elbow of Musashi-W.
+                </figcaption>
+              </figure>
+            </section>
+
+            <hr>
+            <section aria-labelledby="fabrication-heading">
+              <h3 id="fabrication-heading">Fabrication and Implementation</h3>
+              <p>
+                The skin contains 32 strain gauges and 12 conductive stretch sensors. These elements are embedded densely within molded silicone layers, together with fiber bundles that mechanically connect the skin to the skeletal structure. Two fabricated skin components enclose a compliant biomimetic elbow joint and are mounted on the right arm of Musashi-W.
+              </p>
+
+              <figure class="figure-wide">
+                <img
+                  src="assets/img/fabrication.jpg"
+                  class="img-fluid"
+                  width="1796"
+                  height="2271"
+                  loading="lazy"
+                  alt="Sensor arrangement, molding process, assembly, and installation of the biomimetic skin"
+                >
+                <figcaption>
+                  Receptor-like elements, their distribution, the multilayer molding process, and installation on the robot.
+                </figcaption>
+              </figure>
+            </section>
+
+            <hr>
+            <section aria-labelledby="experiment-heading">
+              <h3 id="experiment-heading">Sensorimotor Data Collection</h3>
+              <p>
+                While the robot moved its right arm through varied postures, the experiment recorded 10 muscle-length signals, 10 muscle-tension signals, 32 Merkel-like skin signals, and 12 Ruffini-like skin signals. Motion capture supplied ground-truth pitch, yaw, and roll angles for the elbow. Approximately one hour of operation produced 615 sensorimotor samples spanning about 50 degrees of motion on each axis.
+              </p>
+
+              <figure class="figure-wide">
+                <img
+                  src="assets/img/data-collection.jpg"
+                  class="img-fluid"
+                  width="1878"
+                  height="717"
+                  loading="lazy"
+                  alt="Musashi-W moving through four elbow postures during sensorimotor data collection"
+                >
+                <figcaption>
+                  Muscle, skin, and motion-capture signals were recorded simultaneously across varied arm postures.
+                </figcaption>
+              </figure>
+            </section>
+
+            <hr>
+            <section aria-labelledby="results-heading">
+              <h3 id="results-heading">Proprioceptive Estimation Results</h3>
+              <p>
+                A multilayer perceptron estimated the elbow's three joint angles from each sensing modality. Muscle length achieved the lowest single-modality mean RMSE at 1.70 degrees. Importantly, the two skin modalities independently retained meaningful proprioceptive information: the Ruffini-like and Merkel-like sensors achieved mean RMSE values of 2.56 and 2.69 degrees, respectively.
+              </p>
+
+              <figure class="figure-wide plot-figure">
+                <img
+                  src="assets/img/single-modality-results.png"
+                  class="img-fluid"
+                  width="1276"
+                  height="638"
+                  loading="lazy"
+                  alt="Box plot comparing joint-angle estimation RMSE for muscle length, Merkel-like skin, Ruffini-like skin, and muscle tension"
+                >
+                <figcaption>
+                  Single-modality elbow-angle estimation over 20 random seeds. Lower RMSE is better.
+                </figcaption>
+              </figure>
+
+              <p>
+                The study also compared direct concatenation with an encoder-based fusion architecture. Encoder-based fusion of muscle and skin signals achieved a mean RMSE of 1.62 degrees, significantly improving on the muscle-length-only baseline of 1.70 degrees (Holm-corrected <i>p</i> &lt; 0.001). This indicates that skin deformation carries information complementary to muscle sensing when the modalities are integrated with a suitable representation.
+              </p>
+
+              <figure class="figure-wide plot-figure">
+                <img
+                  src="assets/img/multimodal-results.png"
+                  class="img-fluid"
+                  width="1276"
+                  height="472"
+                  loading="lazy"
+                  alt="Box plot comparing encoder-based and concatenation-based fusion of muscle and skin modalities"
+                >
+                <figcaption>
+                  Multimodal estimation results. M+T / enc combines muscle and skin inputs through modality-specific encoders.
+                </figcaption>
+              </figure>
+            </section>
+
+            <hr>
+            <section aria-labelledby="disturbance-heading">
+              <h3 id="disturbance-heading">Response to External Disturbances</h3>
+              <p>
+                Additional trials applied pushes around the elbow while the robot moved. Models trained without disturbances showed much larger errors for the skin modalities under contact, whereas the muscle-length error increased more moderately from 1.70 to 4.18 degrees. This modality-dependent response suggests a possible cue for distinguishing contact around the joint from changes on the muscle side. The soft covering may also mechanically reduce direct transmission of external forces to exposed muscles.
+              </p>
+
+              <figure class="figure-wide">
+                <img
+                  src="assets/img/external-disturbance.jpg"
+                  class="img-fluid"
+                  width="1684"
+                  height="768"
+                  loading="lazy"
+                  alt="External pushes applied to the elbow and the resulting estimation error for muscle and skin modalities"
+                >
+                <figcaption>
+                  External stimulation with a rod and by hand, followed by the modality-wise RMSE under stimulation.
+                </figcaption>
+              </figure>
+            </section>
+
+            <hr>
+            <section aria-labelledby="scope-heading">
+              <h3 id="scope-heading">Scope and Future Work</h3>
+              <p>
+                This prototype is a tissue-level reconstruction rather than a literal reproduction of biological skin: its sensors are larger and less densely distributed than biological mechanoreceptors. The experiments were also performed mainly under quasi-static conditions. Future work will address sensor miniaturization, long-term effects such as hysteresis and drift, dynamic motion, online calibration, and extension of the tissue-structured design to other body regions.
+              </p>
+            </section>
+
+            <hr>
+            <section id="video" aria-labelledby="video-heading">
+              <h3 id="video-heading">Supplementary Video</h3>
+              <p id="video-description">
+                The 54-second video summarizes fabrication, sensor responses, proprioceptive estimation, and experiments under external mechanical disturbances. It contains no audio.
+              </p>
+              <div class="video-frame">
+                <video
+                  controls
+                  playsinline
+                  preload="metadata"
+                  poster="assets/img/data-collection.jpg"
+                  aria-describedby="video-description"
+                >
+                  <source src="assets/joint-covering-skin.mp4" type="video/mp4">
+                  Your browser does not support embedded MP4 video. You can
+                  <a href="assets/joint-covering-skin.mp4">download the video</a> instead.
+                </video>
+              </div>
+            </section>
+
+            <hr>
+            <section aria-labelledby="bibtex-heading">
+              <h3 id="bibtex-heading">BibTeX</h3>
+              <pre><code>@inproceedings{miki2026biomimetic,
+  title     = {Design of a Biomimetic Joint-Covering Skin with
+               Tissue-Like Structure to Enhance Proprioception
+               in a Musculoskeletal Humanoid},
+  author    = {Akihiro Miki and Shun Hasegawa and
+               Yoshimoto Ribayashi and Kento Kawaharazuka and Kei Okada},
+  booktitle = {Proceedings of the 2026 IEEE/RSJ International Conference
+               on Intelligent Robots and Systems (IROS)},
+  year      = {2026}
+}</code></pre>
+            </section>
+
+            <hr>
+            <section class="contact-section" aria-labelledby="contact-heading">
+              <h3 id="contact-heading">Contact</h3>
+              <p>
+                For questions about this work, please contact
+                <a href="mailto:miki@jsk.t.u-tokyo.ac.jp">Akihiro Miki</a>
+                at the Department of Mechano-Informatics, The University of Tokyo.
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
